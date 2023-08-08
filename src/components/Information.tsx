@@ -1,23 +1,23 @@
-import React from 'react'
-// import 
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Information:React.FC = () => {
   return (
     <section className="info_section  layout_padding2-top">
     <div className="social_container">
       <div className="social_box">
-        <a href="">
-          <i className="fa fa-facebook" aria-hidden="true" />
-        </a>
-        <a href="">
-          <i className="fa fa-twitter" aria-hidden="true" />
-        </a>
-        <a href="">
-          <i className="fa fa-instagram" aria-hidden="true" />
-        </a>
-        <a href="">
-          <i className="fa fa-youtube" aria-hidden="true" />
-        </a>
+        <Link to="">
+          <i className="fa-brands fa-facebook-f" style={{color: "#ffffff"}}></i>
+        </Link>
+        <Link to="">
+        <i className="fa-brands fa-x-twitter" style={{color: "#ffffff"}}></i>
+        </Link>
+        <Link to="">
+        <i className="fa-brands fa-instagram" style={{color: "#ffffff"}}></i>
+        </Link>
+        <Link to="">
+        <i className="fa-brands fa-youtube" style={{color: "#ffffff"}}></i>
+        </Link>
       </div>
     </div>
     <div className="info_container ">
@@ -51,18 +51,18 @@ const Information:React.FC = () => {
           <div className="col-md-6 col-lg-3">
             <h6>CONTACT US</h6>
             <div className="info_link-box">
-              <a href="">
+              <Link to="">
                 <i className="fa fa-map-marker" aria-hidden="true" />
-                <span> Gb road 123 london Uk </span>
-              </a>
-              <a href="">
+                <span> Gol Park, Kolkata, West Bengal. </span>
+              </Link>
+              <Link to="">
                 <i className="fa fa-phone" aria-hidden="true" />
-                <span>+01 12345678901</span>
-              </a>
-              <a href="">
+                <span>+91 9876543210</span>
+              </Link>
+              <Link to="">
                 <i className="fa fa-envelope" aria-hidden="true" />
-                <span> demo@gmail.com</span>
-              </a>
+                <span> sandeepghosh@gmail.com</span>
+              </Link>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@ const Information:React.FC = () => {
       <div className="container">
         <p>
           © <span id="displayYear" /> All Rights Reserved By
-          <a href="https://html.design/">Free Html Templates</a>
+          <Link to="#">Free Html Templates</Link>
         </p>
       </div>
     </footer>

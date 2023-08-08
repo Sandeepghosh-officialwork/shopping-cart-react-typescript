@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const Login:React.FC = () => {
+function CartIsEmpty() {
   return (
     <div className='container px-4 my-5 bg-light rounded-3 py-5 d-flex justify-content-center align-items-center'>
-      <h1>It's Under Construction!</h1>
+      <h1>Your Cart is Empty!</h1>
     </div>
   )
 }
 
-export default Login;
+export default CartIsEmpty;

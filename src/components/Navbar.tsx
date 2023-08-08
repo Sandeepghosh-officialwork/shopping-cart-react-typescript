@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Routes, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar:React.FC = () => {
   return (
@@ -22,8 +22,8 @@ const Navbar:React.FC = () => {
                     <span className="" />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav  ">
-                        <li className="nav-item active">
+                    <ul className="navbar-nav active">
+                        <li className="nav-item">
                         <Link className="nav-link" to="/">
                             Home <span className="sr-only">(current)</span>
                         </Link>
@@ -57,11 +57,11 @@ const Navbar:React.FC = () => {
                         <Link to="/cart">
                         <i className="fa fa-shopping-bag" aria-hidden="true" />
                         </Link>
-                        <form className="form-inline ">
-                        <button className="btn nav_search-btn" type="submit">
+                        <div className="form-inline ">
+                        <button className="btn">
                             <i className="fa fa-search" aria-hidden="true" />
                         </button>
-                        </form>
+                        </div>
                     </div>
                     </div>
                 </nav>

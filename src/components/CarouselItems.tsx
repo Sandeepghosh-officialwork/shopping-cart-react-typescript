@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Profile:React.FC = () => {
+function CarouselItems() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Profile:React.FC = () => {
   )
 }
 
-export default Profile;
+export default CarouselItems

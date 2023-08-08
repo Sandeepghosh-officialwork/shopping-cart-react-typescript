@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import{ Link } from 'react-router-dom';
+
+const imageGifts = require("../assets/images/gifts.png");
 
 const GiftSection:React.FC = () => {
   return (
@@ -9,7 +12,7 @@ const GiftSection:React.FC = () => {
           <div className="col-md-5">
             <div className="img_container">
               <div className="img-box">
-                <img src="images/gifts.png" alt="" />
+                <img src={imageGifts} alt="imageGifts" />
               </div>
             </div>
           </div>
@@ -25,12 +28,12 @@ const GiftSection:React.FC = () => {
                 Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?
               </p>
               <div className="btn-box">
-                <a href="#" className="btn1">
+                <Link to="#" className="btn1">
                   Buy Now
-                </a>
-                <a href="#" className="btn2">
+                </Link>
+                <Link to="#" className="btn2">
                   See More
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import CarouselPart from './CarouselPart';
+import Carousel from './Carousel';
 import LatestProducts from './LatestProducts';
 import ViewSavings from './ViewSavings';
 import WhyUs from './WhyUs';
@@ -10,13 +10,13 @@ import GiftSection from './GiftSection';
 const Home:React.FC = () => {
   return (
     <>
-        <CarouselPart />
-        <LatestProducts />
-        <ViewSavings />
-        <WhyUs />
-        <GiftSection />
-        <ContactUs />
-        <Testimonial />
+      <Carousel />
+      <LatestProducts />
+      <ViewSavings />
+      <WhyUs />
+      <GiftSection />
+      <ContactUs />
+      <Testimonial />
     </>
   )
 }

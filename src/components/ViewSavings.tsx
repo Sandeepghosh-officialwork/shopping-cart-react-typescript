@@ -1,5 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
+const imageSavings = require("../assets/images/saving-img.png");
 const ViewSavings:React.FC = () => {
   return (
         <section className="saving_section ">
@@ -8,7 +10,7 @@ const ViewSavings:React.FC = () => {
             <div className="row">
                 <div className="col-lg-6">
                 <div className="img-box">
-                    <img src="images/saving-img.png" alt="" />
+                    <img src= {imageSavings} alt="" />
                 </div>
                 </div>
                 <div className="col-lg-6">
@@ -23,12 +25,12 @@ const ViewSavings:React.FC = () => {
                     Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque. Qui, animi obcaecati.
                     </p>
                     <div className="btn-box">
-                    <a href="#" className="btn1">
+                    <Link to="#" className="btn1">
                         Buy Now
-                    </a>
-                    <a href="#" className="btn2">
+                    </Link>
+                    <Link to="#" className="btn2">
                         See More
-                    </a>
+                    </Link>
                     </div>
                 </div>
                 </div>
